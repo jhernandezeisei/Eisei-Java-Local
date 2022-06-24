@@ -1,0 +1,1300 @@
+@font-face {
+    font-family: robotolight;
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+        url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .3s
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: #fff
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+    color: #fff
+}
+
+.icon-logout {
+    mask: url(../img/icons/icono_cerrar_sesion.svg)
+}
+
+.icon-svg {
+    display: inline-block;
+    width: 35px;
+    height: 35px
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.row {
+    margin: 0;
+    padding: 0
+}
+
+a,
+label,
+span {
+    font-family: robotolight;
+}
+
+.number-rut,
+input,
+select {
+    font-family: robotomedium;
+}
+
+.title-page,
+.title-txt {
+    font-family: truenoextrabold;
+}
+
+.solistica-container {
+    height: 100%;
+    width: 100%;
+    display: table;
+    position: absolute;
+    overflow: hidden
+}
+
+.solistica-box-container {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.solistica-box-container .box {
+    width: 40%;
+    text-align: center;
+    margin: 0 auto
+}
+
+#box-finalizar-viaje .box,
+#box-inicio-viaje .box {
+    margin-top: 50px
+}
+
+.solistica-box-container #box-finalizar-viaje,
+.solistica-box-container #box-inicio-viaje {
+    width: 60%
+}
+
+.box h1 {
+    padding: 10px 30px 30px 30px;
+    font-weight: 700
+}
+
+.box .data-message {
+    display: block;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 3.2em;
+    color: #202c52;
+    line-height: 60px
+}
+
+.box .data-name-user {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #dcdcdc;
+    color: #202c52;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 15px
+}
+
+.box .data-name-user i {
+    font-size: 1.5em
+}
+
+.box .data-name-user span {
+    color: #202c52;
+    padding: 10px
+}
+
+.box .data-rout {
+    display: inline-block;
+    font-size: 2em;
+    padding: 15px;
+    border: 1px solid #fa851e;
+    margin-bottom: 20px;
+    color: #202c52
+}
+
+.box .data-rout span {
+    color: #202c52;
+    font-weight: 700
+}
+
+.solistica-btn {
+    text-align: center;
+    color: #fff;
+    border: none
+}
+
+.solistica-div-templates-rectangle-oxxo{
+    background: #FEBF00;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #202C52;
+    box-shadow: -5px 0px 10px #cdd1d7;
+    padding-top: 25px;
+}
+
+.solistica-div-templates-rectangle-kof{
+    background: #203864;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #EB7C32;
+    box-shadow: -5px 0px 10px #cdd1d7;
+    padding-top: 25px;
+}
+
+.solistica-div-templates-rectangle-cmh{
+    background: #70AD47;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #202C52;
+    box-shadow: -5px 0px 10px #cdd1d7;
+    padding-top: 25px;
+}
+
+.solistica-div-templates-rectangle-oxxo:hover{
+    background: #dcdcdc;
+    border: 1px solid #202c52;
+    cursor: pointer;
+}
+
+.solistica-div-templates-rectangle-kof:hover{
+    background: #dcdcdc;
+    border: 1px solid #202c52;
+    cursor: pointer;
+}
+
+.solistica-div-templates-rectangle-cmh:hover{
+    background: #dcdcdc;
+    border: 1px solid #202c52;
+    cursor: pointer;
+}
+
+.solistica-div-templates-circle{
+    background: #ffffff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align:center;
+    padding-top: 28%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.solistica-div-templates-circle-text{
+    font-size: 1.8em;
+    color: #202C52;
+    padding-top: 35%;
+    font-family: truenoextrabold;
+    pointer-events: none;
+}
+
+.btn-show-map {
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    text-align: middle;
+    background: #202c52;
+    margin-left: 4%;
+    height: 50px;
+    padding-top: 5px!important
+}
+
+.btn-show-map i {
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 3px
+}
+
+.btn-big {
+    display: block;
+    padding: 30px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.5em
+}
+
+.btn-middle {
+    display: block;
+    padding: 15px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.2em
+}
+
+.btn-print {
+    padding: 15px!important;
+    background: #f9b014;
+    color: #202c52;
+    font-size: 1.2em;
+    display: flex!important;
+    align-items: center;
+    justify-content: center
+}
+
+.btn-print:hover {
+    background: #fa851e;
+    color: #202c52
+}
+
+.btn-print i {
+    font-size: 1.8em;
+    padding: 5px
+}
+
+.solistica-box-container #box-resource .btn-big {
+    width: 40%;
+    margin-left: 30%
+}
+
+.btn-small {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+    min-width: 160px;
+    font-weight: 700;
+    /*display: inline-flex!important;*/
+    align-items: center;
+    justify-content: center
+}
+.btn-small-status-trip{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2em;
+    min-width: 160px;
+    font-weight: 700;
+    /*display: inline-flex!important;*/
+    align-items: center;
+    justify-content: center
+}
+
+.btn-small i {
+    font-size: 1.5em;
+    padding: 5px
+}
+
+.btn-dark-blue {
+    background: #202c52;
+    color: #f9b014!important;
+}
+
+.btn-orange {
+    background: #fa851e
+}
+
+.btn-orange:hover {
+    color: #fff;
+    background: #f9b014
+}
+
+.btn-orange-light {
+    background: #f9b014;
+    color: #4f4e4c;
+    font-weight: 700
+}
+
+.btn-orange-light:hover {
+    background: #fa851e;
+    color: #4f4e4c
+}
+
+.btn-gray {
+    background: #4f4e4c
+}
+
+#box-finalizar-viaje .btn-small,
+#box-inicio-viaje .btn-small {
+    padding: 40px;
+    min-width: 370px
+}
+
+#box-finalizar-viaje .btn-orange-light,
+#box-inicio-viaje .btn-orange-light {
+    color: #202c52
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+header .row {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+header .row div {
+    height: 100%;
+    text-align: center;
+    padding-top: 20px
+}
+
+header .solistica-logo {
+    height: 90%;
+    position: absolute;
+    left: 2%
+}
+
+header .btn-logout {
+    background: #202c52;
+    padding: 15px;
+    border: 1px solid #fa851e;
+    font-size: 1.2em;
+    position: absolute;
+    right: 2%;
+    color: #fa851e;
+    top: 31%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center
+}
+
+header .btn-workday {
+    background: #202c52;
+    padding: 15px;
+    border: 1px solid #fa851e;
+    font-size: 1.2em;
+    position: absolute;
+    right: 16.7%;
+    color: #fa851e;
+    top: 31%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 66px;
+}
+
+header .btn-logout i {
+    font-size: 1.8em;
+    padding-left: 10px
+}
+
+header .btn-workday i {
+    font-size: 1.8em;
+    padding-left: 10px
+}
+
+header .title-page {
+    color: #202c52;
+    font-weight: 800;
+    line-height: 100px
+}
+
+header .title-page-light {
+    color: #fa851e;
+    font-weight: 600;
+    line-height: 100px;
+    font-family: robotolight;
+}
+
+header .title-page-light span {
+    color: #202c52
+}
+
+::placeholder {
+    color: #4f4e4c;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #4f4e4c
+}
+
+::-ms-input-placeholder {
+    color: #4f4e4c
+}
+
+input,
+input.form-control,
+select {
+    background: #fff;
+    color: #4f4e4c;
+    border-radius: 0!important;
+    border: 0
+}
+
+select {
+    height: 50px
+}
+
+input.form-control:focus,
+input:focus,
+select:focus {
+    outline: 0!important;
+    outline-width: 0!important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none
+}
+
+select {
+    display: block;
+    width: 100%;
+    padding: 12px
+}
+
+label {
+    display: block;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 15px;
+    font-weight: 700;
+    color: #4f4e4c
+}
+
+.icon-input,
+.icon-input-small {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #202c52;
+    line-height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em
+}
+
+.input-big {
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px
+}
+
+.input-small {
+    font-size: 1.2em;
+    font-weight: 700;
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 10px
+}
+
+.solistica-forms {
+    width: 90%;
+    position: relative;
+    margin: auto
+}
+
+.solistica-forms a {
+    display: block;
+    font-weight: 700;
+    padding-top: 20px;
+    text-decoration: none
+}
+
+.wrap-forms {
+    background: #d9d9d9;
+    padding: 0;
+    height: 50px
+}
+
+.wrap-forms div {
+    padding: 0
+}
+
+.wrap-forms-btn {
+    background: #202c52;
+    color: #fff;
+    height: 50px
+}
+
+.solistica-popup {
+    width: 100%;
+    height: 100%;
+    /*    background: #202c52;*/
+    background: #202c52a6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none
+}
+
+.solistica-popup-return {
+    width: 100%;
+    height: 100%;
+    /*    background: #202c52;*/
+    background: #202c52a6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none
+}
+
+.solistica-popup-monitoring {
+    width: 100%;
+    height: 100%;
+    /*    background: #202c52;*/
+    background: #202c52a6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none
+}
+
+.solistica-popup-table{
+    width: 100%;
+    height: 100%;
+    /*    background: #202c52;*/
+    background: #202c52a6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none
+}
+
+.solistica-spinner {
+    width: 100%;
+    height: 100%;
+    /*    background: #202c52;*/
+    background: #202c52a6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto-popup-error {
+    width: 100%;
+    height: 100%;
+    /*    background: #202c52;*/
+    background: #202c52a6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none
+}
+
+.proyecto-popup-message {
+    width: 100%;
+    height: 100%;
+    /*background: #202c52;*/
+    background: #202c52a6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none
+}
+
+.proyecto-popup-message-success{
+    width: 100%;
+    height: 100%;
+    /*background: #202c52;*/
+    background: #202c52a6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none
+}
+
+.proyecto-popup-bulkload {
+    width: 100%;
+    height: 100%;
+    /*    background: #202c52;*/
+    background: #202c52a6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none
+}
+
+.showing {
+    display: table
+}
+
+.show {
+    display: block
+}
+
+.not-showing {
+    display: none
+}
+
+.solistica-popup-container {
+    display: table-cell;
+    vertical-align: middle
+}
+.solistica-spinner-container {
+    display: table-cell;
+    vertical-align: middle
+}
+.solistica-popup-container-error {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.popup-message span {
+    font-size: 1.3em;
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    padding: 5px
+}
+
+.title-popup {
+    color: #202c52;
+    font-weight: 600;
+    padding-bottom: 0;
+    font-family: robotoblack;
+    line-height: 20px
+}
+
+.title-dos {
+    font-family: robotoregular
+}
+
+.message-popup {
+    color: #4f4e4c;
+    font-weight: 600
+}
+
+.icon-popup {
+    display: block!important;
+    font-size: 5em!important;
+    text-align: center;
+    color: #202c52
+}
+
+.box-popup {
+    width: 40%;
+    background: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px
+}
+
+#autodespacho .popup-message span {
+    width: 90%
+}
+
+#autodespacho .title-popup {
+    font-size: 1.5em
+}
+
+#login-container {
+    background: #202c52;
+    background: url(../img/bckg-over.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: cover;
+    background-position: center center
+}
+
+#box-login {
+    width: 35%;
+    margin-left: 10%
+}
+
+#box-login h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 50px
+}
+
+.solistica-box-container #box-resource {
+    width: 96%;
+    margin-top: 50px
+}
+
+#box-resource form {
+    width: 100%;
+    background: #f4f3f1;
+    padding: 10px
+}
+
+#box-resource form .row {
+    width: 96%;
+    margin-left: 2%
+}
+
+@media (max-width:1024px) {
+    .solistica-box-container #box-finalizar-viaje,
+    .solistica-box-container #box-inicio-viaje,
+    .solistica-box-container .box {
+        width: 80%
+    }
+    header .solistica-logo {
+        left: 5%
+    }
+    header .btn-logout {
+        right: 5%
+    }
+    header .btn-workday {
+        right: 24%
+    }
+    header .title-page,
+    header .title-page-light {
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        left: 0
+    }
+    #box-login {
+        width: 50%;
+        margin-left: 25%
+    }
+    #box-login h1 {
+        margin-top: -50px
+    }
+    .box-popup {
+        width: 80%
+    }
+    #autodespacho .popup-message span {
+        width: 80%
+    }
+    #autodespacho .title-popup {
+        font-size: 2em
+    }
+    .solistica-box-container #box-resource {
+        margin-top: -200px
+    }
+    #box-finalizar-viaje .box,
+    #box-inicio-viaje .box {
+        width: 50%
+    }
+}
+
+@media (max-width:768px) {
+    .solistica-box-container #box-finalizar-viaje,
+    .solistica-box-container #box-inicio-viaje,
+    .solistica-box-container .box {
+        width: 80%
+    }
+    header .solistica-logo {
+        left: 5%
+    }
+    header .btn-logout {
+        right: 5%
+    }
+    header .btn-workday {
+        right: 30%
+    }
+    header .title-page,
+    header .title-page-light {
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        font-size: 2.5em;
+        left: 0
+    }
+    #box-login {
+        width: 60%;
+        margin-left: 20%
+    }
+    #box-login h1 {
+        margin-top: -50px
+    }
+    .box-popup {
+        width: 80%
+    }
+    #autodespacho .popup-message span {
+        width: 80%
+    }
+    #autodespacho .title-popup {
+        font-size: 1.8em
+    }
+    .solistica-box-container #box-resource {
+        width: 96%;
+        margin-top: 0;
+        margin-bottom: 80px
+    }
+    #form-resource .row {
+        width: 100%!important;
+        margin-left: 0!important
+    }
+    #form-resource label {
+        font-size: .9em
+    }
+    #form-resource .input-small {
+        padding: 13px
+    }
+    #form-resource .btn-show-map,
+    #form-resource .input-small,
+    #form-resource select option {
+        font-size: 1em
+    }
+    #box-finalizar-viaje .box,
+    #box-inicio-viaje .box {
+        margin-top: 100px;
+        width: 70%
+    }
+    .btn-print i {
+        font-size: 1.6em
+    }
+    .btn-print {
+        font-size: 1.1em
+    }
+}
+
+@media (max-width:600px) {
+    .solistica-box-container #box-finalizar-viaje,
+    .solistica-box-container #box-inicio-viaje,
+    .solistica-box-container .box {
+        width: 80%
+    }
+    #box-login {
+        width: 80%;
+        margin-left: 10%
+    }
+    #box-login h1 {
+        margin-top: 50px
+    }
+    header .solistica-logo {
+        left: 5%
+    }
+    header .btn-logout {
+        right: 5%
+    }
+    header .btn-workday {
+        right: 25%
+    }
+    header .title-page,
+    header .title-page-light {
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        font-size: 2.5em;
+        left: 0
+    }
+    .box-popup {
+        width: 80%
+    }
+    #autodespacho .popup-message span {
+        width: 90%
+    }
+    #autodespacho .title-popup {
+        font-size: 1.3em
+    }
+    .solistica-box-container #box-resource {
+        width: 90%;
+        margin-top: 200px;
+        margin-bottom: 80px
+    }
+    #form-resource .row {
+        width: 100%!important;
+        margin-left: 0!important
+    }
+    .solistica-box-container #box-resource .btn-big {
+        width: 84%;
+        margin-left: 8%
+    }
+    #form-resource label {
+        font-size: .9em
+    }
+    #form-resource .input-small {
+        padding: 13px
+    }
+    #form-resource .btn-show-map,
+    #form-resource .input-small,
+    #form-resource select option {
+        font-size: 1em
+    }
+    #box-finalizar-viaje .box,
+    #box-inicio-viaje .box {
+        margin-top: 100px;
+        width: 90%
+    }
+    .btn-print {
+        font-size: 1.2em
+    }
+}
+
+@media (max-width:480px) {
+    .solistica-box-container #box-finalizar-viaje,
+    .solistica-box-container #box-inicio-viaje,
+    .solistica-box-container .box {
+        width: 90%
+    }
+    header .solistica-logo {
+        left: 5%
+    }
+    header .btn-logout {
+        right: 5%
+    }
+    header .btn-workday {
+        right: 5%;
+    }
+    header .title-page,
+    header .title-page-light {
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        font-size: 1.8em;
+        left: 0
+    }
+    #box-inicio-viaje .data-message,
+    .box .data-message {
+        font-size: 2em;
+        line-height: 40px
+    }
+    #box-finalizar-viaje .data-message {
+        font-size: 2.5em;
+        line-height: 40px
+    }
+    #box-login {
+        width: 90%;
+        margin-left: 5%
+    }
+    #box-login h1 {
+        font-size: 2em;
+        margin-top: 50px
+    }
+    .box-popup {
+        width: 90%
+    }
+    .popup-message span {
+        font-size: 1.1em;
+        max-width: 90%
+    }
+    #autodespacho .popup-message span {
+        width: 90%
+    }
+    #autodespacho .title-popup {
+        font-size: 1.5em
+    }
+    .solistica-box-container #box-resource {
+        width: 100%;
+        margin-top: 200px;
+        margin-bottom: 80px
+    }
+    #form-resource .row {
+        width: 100%!important;
+        margin-left: 0!important
+    }
+    #form-resource label {
+        font-size: .8em
+    }
+    #form-resource .input-small {
+        padding: 15px
+    }
+    #form-resource .input-small,
+    #form-resource select option {
+        font-size: .9em
+    }
+    #form-resource .btn-show-map {
+        font-size: .8em
+    }
+    .solistica-box-container #box-resource .btn-big {
+        width: 82%;
+        margin-left: 9%
+    }
+    #box-finalizar-viaje .btn-small,
+    #box-inicio-viaje .btn-small {
+        padding: 30px 20px;
+        min-width: 320px
+    }
+    #box-finalizar-viaje .box,
+    #box-inicio-viaje .box {
+        margin-top: 100px;
+        width: 90%
+    }
+    .btn-print {
+        font-size: 1em
+    }
+    .btn-small i {
+        font-size: 1.2em
+    }
+}
+#map,#mapContainer {
+    width: 100%;
+    height: 600px;
+    background: grey;
+}
+#wrap_map_container{
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0; 
+    top:0;
+    z-index: 999999; 
+    display: none; 
+    background: #fff;
+}
+.wrap_map{
+    position: relative; 
+    width: 100%; 
+    height: 100%
+}
+.btn_close_map{
+    position: absolute;
+    z-index: 9999;
+    background: blue;
+    color: white;
+    display: block;
+    padding: 10px;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+/* SPIN LOADER CSS */
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hide-loader{
+    display:none;
+}
+.isDisabled-proceed {
+    cursor: not-allowed;
+    opacity: 0.8;
+    text-decoration: none;
+    pointer-events: none;
+}
+.isDisabled-search {
+    cursor: not-allowed;
+    opacity: 0;
+    text-decoration: none;
+    pointer-events: none;
+}
+.solistica-spinner-order {
+    width: 100%;
+    height: 100%;
+    /*    background: #202c52;*/
+    background: #202c52a6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-timer{
+    border: 1px solid #ced4da !important;
+    border-radius: 2!important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.timer{
+    float: right;
+    padding-right: 1%;
+}
+.header1 {
+    width: 100%;
+    top: 0;
+    left: 0
+}
+
+.header1 .row {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.header1 .row div {
+    height: 100%;
+    text-align: center;
+    padding-top: 20px
+}
+
+.header1 .solistica-logo {
+    height: 90%;
+    position: absolute;
+    left: 2%
+}
+
+.header1 .btn-logout {
+    background: #202c52;
+    padding: 15px;
+    border: 1px solid #fa851e;
+    font-size: 1.2em;
+    position: absolute;
+    right: 2%;
+    color: #fa851e;
+    top: 31%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center
+}
+
+.header1 .btn-workday {
+    background: #202c52;
+    padding: 15px;
+    border: 1px solid #fa851e;
+    font-size: 1.2em;
+    position: absolute;
+    right: 16.7%;
+    color: #fa851e;
+    top: 31%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 66px;
+}
+
+.header1 .btn-logout i {
+    font-size: 1.8em;
+    padding-left: 10px
+}
+
+.header1 .btn-workday i {
+    font-size: 1.8em;
+    padding-left: 10px
+}
+
+.header1 .title-page {
+    color: #202c52;
+    font-weight: 800;
+    line-height: 100px
+}
+
+.header1 .title-page-light {
+    color: #fa851e;
+    font-weight: 600;
+    line-height: 100px;
+    font-family: robotolight;
+}
+
+.header1 .title-page-light span {
+    color: #202c52
+}
+
+/*
+ *  STYLE 10
+ */
+
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+#style-10::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+#style-10::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-10::-webkit-scrollbar-thumb
+{
+    background-color: #AAA;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(90deg,
+        rgba(0, 0, 0, .2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(0, 0, 0, .2) 50%,
+        rgba(0, 0, 0, .2) 75%,
+        transparent 75%,
+        transparent)
+}
+
+.div-lbl-dates {
+    padding: 0px;
+    display: flex; 
+    padding: 0; 
+    justify-content: space-evenly; 
+    align-content: space-around;
+}
+
+.lbl-dates-charges {
+    padding: 5px!important;
+    background: #0355AD;
+    color: #fff!important;
+    font-size: 1.2em;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    width: 405px;
+    pointer-events: none;
+}
+
+.btn-end-charge {
+    padding: 15px!important;
+    background: #B4B6B8;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-end-charge:hover {
+    background: #818181;
+    color: #fff;
+}
+
+.btn-end-charge i {
+    font-size: 1.8em;
+    padding: 5px;
+}
