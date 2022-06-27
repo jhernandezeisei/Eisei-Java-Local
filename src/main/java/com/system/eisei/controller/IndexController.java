@@ -8,9 +8,22 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
+@Controller
 public class IndexController extends HttpServlet {
     Usuario user = new Usuario();
+    
+    
+    @RequestMapping(value = "/login")
+    public ModelAndView index() {
+        ModelAndView indexModel = new ModelAndView("index", "command", new Object());
+        return indexModel;
+    }
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
     }
@@ -23,18 +36,20 @@ public class IndexController extends HttpServlet {
     }
 
     @Override
+    @RequestMapping(value = "/Userlogin")
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String usuario = request.getParameter("usuario");
-        String contraseña = request.getParameter("contrasena");
+        String usuario = request.getParameter("txtusuario");
+        String contraseña = request.getParameter("txtpass");
         user.setUsuario(usuario);
         user.setContraseña(contraseña);
+        
         LoginDao ld = new LoginDaoImpl();
         Usuario u = ld.login(user);
         if(u.getUsuario()!=null){
-            request.getRequestDispatcher("welcome.jsp").forward(request, response);
+            request.getRequestDispatcher("prueba.jsp").forward(request, response);
         }else{
-            response.sendRedirect("bienvenida.jsp");
+            response.sendRedirect("index.jsp");
         }
     }
 
