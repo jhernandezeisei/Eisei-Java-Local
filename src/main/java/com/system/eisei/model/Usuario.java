@@ -2,10 +2,6 @@ package com.system.eisei.model;
 
 public class Usuario {
 
-    public static Usuario login(String usuario, String contraseña) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     int id;
     String usuario;
     String contraseña;

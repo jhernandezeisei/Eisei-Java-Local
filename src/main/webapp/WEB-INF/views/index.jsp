@@ -25,11 +25,11 @@
                         </div>                     
                         <div class="form-group text-center">
                             <label for="usuario" class="form-label">Usuario</label>
-                            <input type="text" class="form-control" name="txtusuario" id="txtusuario">
+                            <input type="text" class="form-control" id="txtusuario">
                         </div>
                         <div class="form-group text-center">
                             <label for="contraseña" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" name="txtpass" id="txtpass" >
+                            <input type="password" class="form-control" id="txtpass" >
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="recordarPass">
@@ -41,9 +41,10 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="assets/js/jquery-3.3.1.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-3.3.1.js"></script>
+
         <script src="assets/js/login.js" type="text/javascript"></script>
     </body>
 </html>
