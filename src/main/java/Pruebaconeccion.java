@@ -14,17 +14,17 @@ public class Pruebaconeccion {
         try {
             
             String connectionUrl =
-                    "jdbc:sqlserver://EDGO-026\\SQLEXPRESS;"
-                            + "database=JAVALOCALEISEI;"
+                    "jdbc:sqlserver://localhost:1433;"
+                            + "database=Agenda;"
                             + "user=sa;"
-                            + "password=Eiseidgo2022;"
+                            + "password=Agen123;"
                             + "trustServerCertificate=true";
             
             Connection con = DriverManager.getConnection(connectionUrl);
             System.out.println("Conexión a BD exitosa.");
             
             Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("SELECT * FROM UsuariosPrueba");
+            ResultSet rs = st.executeQuery("SELECT * FROM Usuarios");
             //String sql ="select * from UsuariosPrueba";
 
             //creating PreparedStatement object to execute query
